@@ -1,8 +1,22 @@
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Feature from "../components/Feature";
+import Footer from "../components/Footer";
 import "./HomeView.css";
 
-const HomeView = () => {
+function HomeView() {
   return (
-    <h1>Home</h1>
+    <>
+      <div className="footerBackground"></div>
+      <div className="spotlight"></div>
+      <div className="mainPage">
+        <Feature />
+        <Hero />
+        <Header />
+      </div>
+      <Footer />
+
+    </>
   )
 }
 
